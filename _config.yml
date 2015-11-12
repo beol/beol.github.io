@@ -1,7 +1,8 @@
 name: ""
 description: ""
 
-url: "http://localhost:4000"
+url: "http://beol.github.io"
 
 paginate: 10
 
+exclude: [".rvmrc", "README.md", "Gemfile", "Gemfile.lock", "convert-blogger.rb", "build.js"]

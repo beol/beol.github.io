@@ -1,17 +1,21 @@
 require.config({
-    baseUrl: 'assets/js',
+    baseUrl: "assets/js",
     paths: {
-        bootstrap: 'bootstrap',
-        jquery: 'jquery'
+        "bootstrap": "bootstrap",
+        "jquery": "jquery",
+        "tracker": "tracker"
     },
     shim: {
-        'bootstrap': {
-            deps: ['jquery'],
-            export: 'Bootstrap'
+        "bootstrap": {
+            deps: ["jquery"],
+            export: "Bootstrap"
+        },
+        "tracker": {
+            exports: "tracker"
         }
     }
 });
 
-require(['jquery', 'bootstrap'], function() {
+require(["tracker", "jquery", "bootstrap"], function() {
 
 });
