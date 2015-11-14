@@ -34,9 +34,9 @@ require.config({
     }
 });
 
-require(["ga", "qc", "jquery", "bootstrap"], function(ga, qc, $, Bootstrap) {
+require(["ga", "jquery", "bootstrap", "qc"], function(ga) {
     ga("send", "pageview");
-    qc._qevents.push({
+    _qevents.push({
         qacct: "p-2hmv506hLezgG"
     });
 });
