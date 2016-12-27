@@ -1,10 +1,11 @@
-name: ""
+title: "Rants &amp; Raves"
 description: ""
 
 url: "http://beol.github.io"
+repository: "beol/beol.github.io"
 
-paginate: 10
-
-exclude: [".rvmrc", "README.md", "Gemfile", "Gemfile.lock", "convert-blogger.rb", "build.js"]
+google_analytics: UA-8853012-4
 
 theme: jekyll-theme-minimal
+
+exclude: [".rvmrc", "README.md", "Gemfile", "Gemfile.lock", "build.js"]
