@@ -1,14 +1,6 @@
-window.GoogleAnalyticsObject = "__ga__";
-window.__ga__ = {
-    q: [['create', 'UA-8853012-4', 'auto']],
-    l: Date.now()
-};
-
-require.config({
+requirejs.config({
     baseUrl: "assets/js",
     paths: {
-        "bootstrap": "bootstrap",
-        "jquery": "jquery",
         "ga": [
             'https://www.google-analytics.com/analytics',
             'http://www.google-analytics.com/analytics',
@@ -18,25 +10,24 @@ require.config({
             "https://secure.quantserve.com/quant",
             "http://edge.quantserve.com/quant",
             'quant'
-        ]
+        ],
+        "scale.fix": 'scale.fix'
     },
     shim: {
-        "bootstrap": {
-            deps: ["jquery"],
-            export: "Bootstrap"
-        },
         "ga": {
             exports: "__ga__"
         },
         "qc": {
-            exports: "qc"
+            exports: "Quantcast"
+        },
+        "scale.fix": {
+            exports: "ScaleFix"
         }
     }
 });
 
-require(["ga", "jquery", "bootstrap", "qc"], function(ga) {
+requirejs(['ga', 'qc', 'scale.fix'], function(ga) {
+    'use strict';
+
     ga("send", "pageview");
-    _qevents.push({
-        qacct: "p-2hmv506hLezgG"
-    });
 });

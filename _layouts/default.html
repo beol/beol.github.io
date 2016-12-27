@@ -21,45 +21,31 @@
       </section>
       {% include footer.html %}
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
 
   {% if site.google_analytics %}
     <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-        var pageTracker = _gat._getTracker("{{ site.google_analytics }}");
-      pageTracker._trackPageview();
-      } catch(err) {}
+      window.GoogleAnalyticsObject = "__ga__";
+      window.__ga__ = {
+        q: [['create', '{{ site.google_analytics }}', 'auto']],
+        l: Date.now()
+      };
     </script>
   {% endif %}
-
   {% if site.quantcast %}
-    <!-- Quantcast Tag -->
     <script type="text/javascript">
       var _qevents = _qevents || [];
-
-      (function() {
-         var elem = document.createElement('script'); elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js"; elem.async = true;
-         elem.type = "text/javascript";
-         var scpt = document.getElementsByTagName('script')[0];
-         scpt.parentNode.insertBefore(elem, scpt);
-       })();
-
       _qevents.push({
-        qacct:"{{ site.quantcast }}"
+        qacct: '{{ site.quantcast }}'
       });
     </script>
 
     <noscript>
       <div style="display:none;">
-        <img src="//pixel.quantserve.com/pixel/p-2hmv506hLezgG.gif" border="0" height="1" width="1" alt="Quantcast"/>
+        <img src="//pixel.quantserve.com/pixel/{{ site.quantcast }}.gif" border="0" height="1" width="1" alt="Quantcast"/>
       </div>
     </noscript>
-    <!-- End Quantcast tag -->
   {% endif %}
+    <script data-main="/assets/js/main" src="/assets/js/require.js"></script>
   </body>
 </html>
