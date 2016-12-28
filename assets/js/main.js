@@ -1,33 +1,27 @@
 requirejs.config({
     baseUrl: "assets/js",
     paths: {
-        "ga": [
+        "jquery": [
+            'https://code.jquery.com/jquery-1.12.4.min',
+            'jquery-1.12.4.min'
+        ],
+        "analytics": [
             'https://www.google-analytics.com/analytics',
-            'http://www.google-analytics.com/analytics',
             'analytics'
         ],
-        "qc": [
-            "https://secure.quantserve.com/quant",
-            "http://edge.quantserve.com/quant",
+        "quant": [
+            (document.location.protocol == 'https://' ? 'https://secure' : 'http://edge') + '.quantserve.com/quant',
             'quant'
         ],
         "scale.fix": 'scale.fix'
     },
     shim: {
-        "ga": {
+        "analytics": {
             exports: "__ga__"
-        },
-        "qc": {
-            exports: "Quantcast"
-        },
-        "scale.fix": {
-            exports: "ScaleFix"
         }
     }
 });
 
-requirejs(['ga', 'qc', 'scale.fix'], function(ga) {
+requirejs(['tracker', 'scale.fix'], function() {
     'use strict';
-
-    ga("send", "pageview");
 });
