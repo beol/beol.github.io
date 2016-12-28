@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl: "assets/js",
+    baseUrl: "/assets/js",
     paths: {
         "jquery": [
             'https://code.jquery.com/jquery-1.12.4.min',
