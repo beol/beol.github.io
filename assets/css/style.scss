@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header img {
+    border-radius: 100%;
+}
+
+header div.view a {
+    color: inherit;
+}
