@@ -10,7 +10,7 @@ requirejs.config({
             'analytics'
         ],
         "quant": [
-            (document.location.protocol == 'https://' ? 'https://secure' : 'http://edge') + '.quantserve.com/quant',
+            (document.location.protocol == 'https:' ? 'https://secure' : 'http://edge') + '.quantserve.com/quant',
             'quant'
         ],
         "scale.fix": 'scale.fix'
