@@ -1,8 +1,9 @@
-define(['jquery', 'analytics', 'quant'], function($, ga) {
+define(['analytics', 'quant'], function(ga) {
+    'use strict';
 
     ga('send', 'pageview');
 
     _qevents.push({
-        qacct: $('#quantcast').data('pcode')
+        qacct: document.getElementById('quantcast').getAttribute('data-pcode')
     });
 });
