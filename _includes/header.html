@@ -1,9 +1,9 @@
 <header>
-    <img src="https://www.gravatar.com/avatar/6f883e6660c16d8c1b51277eb4f602f1">
-    <h1>{{ site.title }}</h1>
+  <img alt="avatar" src="https://www.gravatar.com/avatar/{{ site.gravatar }}">
+  <h1>{{ site.title }}</h1>
 
-    <p>{{ site.description | default: site.github.project_tagline }}</p>
+  <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-    <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+  <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
 
 </header>
