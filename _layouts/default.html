@@ -33,12 +33,7 @@
     </script>
   {% endif %}
   {% if site.quantcast %}
-    <script type="text/javascript">
-      var _qevents = _qevents || [];
-      _qevents.push({
-        qacct: '{{ site.quantcast }}'
-      });
-    </script>
+    <div id='quantcast' data-pcode="{{ site.quantcast }}"></div>
 
     <noscript>
       <div style="display:none;">
