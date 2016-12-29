@@ -9,5 +9,7 @@ quantcast: p-2hmv506hLezgG
 gravatar: 6f883e6660c16d8c1b51277eb4f602f1
 
 theme: jekyll-theme-minimal
+gems:
+    - jekyll-sitemap
 
 exclude: [".rvmrc", "README.md", "Gemfile", "Gemfile.lock", "build.js", "vendor", "script"]
