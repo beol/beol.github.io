@@ -2,7 +2,8 @@
 ---
 
 {% for post in site.posts %}
-<h2>{{ post.title }}</h2>
+## {{ post.title }}
+<p><small>{{ post.date | date_to_string }}</small></p>
 
 {{ post.excerpt }}
 [Read more...]({{ post.url }})
