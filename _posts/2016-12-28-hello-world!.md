@@ -1,8 +1,7 @@
 ---
+layout: post
 excerpt_separator: <!--more-->
 ---
-
-## Hello world!
 
 One of my goal for 2016 was to start writing my own thoughts again. It's been far too long since I wrote on [my old blog](http://beol.laksmana.com/).
 
