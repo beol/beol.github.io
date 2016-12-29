@@ -1,12 +1,8 @@
 ---
-excerpt_separator: <!--more-->
+layout: post
 ---
-## 2016: Year in Review
-
-One of my goal for 2016 was to start writing my own thoughts, mostly technical, otherwise just random rants [1]. Took me long enough to write the first piece ;)
 
 2016 came and went, lots of things achieved but there are still a few things left to be desired.
-<!--more-->
 
 ### The Goals
 
@@ -25,6 +21,3 @@ After some job searching, I ended getting my old job back. It allows me to plan 
 ### What’s Left to be Desired
 
 ### What’s in Store for 2017
-
----
-[1] [beol.laksmana.com](http://beol.laksmana.com/)
