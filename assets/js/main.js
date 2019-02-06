@@ -12,8 +12,7 @@ requirejs.config({
         "quant": [
             (document.location.protocol == 'https:' ? 'https://secure' : 'http://edge') + '.quantserve.com/quant',
             'quant'
-        ],
-        "font-awesome": 'https://use.fontawesome.com/5c13958cd4'
+        ]
     },
     shim: {
         "analytics": {
@@ -22,6 +21,6 @@ requirejs.config({
     }
 });
 
-requirejs(['font-awesome', 'scale.fix', 'tracker'], function() {
+requirejs(['scale.fix', 'tracker'], function() {
     'use strict';
 });
