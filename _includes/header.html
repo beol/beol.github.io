@@ -1,40 +1,41 @@
-<header>
+<header class="sidebar">
   <img alt="avatar" src="https://www.gravatar.com/avatar/{{ site.gravatar }}">
   <h1>{{ site.title }}</h1>
 
   <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-  <p class="view">
-    <a href="mailto:beol@laksmana.com">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    <a href="{{ site.github.owner_url }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    <a href="http://www.linkedin.com/in/llaksmana">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    <a href="http://twitter.com/beol">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    <a href="http://instagram.com/laksmana">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </p>
-
+  <ul class="view">
+    <li>
+      <a href="mailto:leo@laksmana.com">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.github.owner_url }}">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.linkedin.com/in/llaksmana">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="http://instagram.com/laksmana">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </li>
+  </ul>
 </header>
