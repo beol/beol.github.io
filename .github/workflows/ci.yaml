@@ -1,0 +1,29 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        ruby-version: [3.4.2]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+
+      - name: Set environment variable
+        run: echo "NOKOGIRI_USE_SYSTEM_LIBRARIES=true" >> $GITHUB_ENV
+
+      - name: Run build script
+        run: |
+          bundle exec jekyll build
+          bundle exec htmlproofer ./_site --disable-external
