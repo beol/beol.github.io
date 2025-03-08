@@ -1,26 +1,8 @@
-requirejs.config({
-    baseUrl: "/assets/js",
-    paths: {
-        "jquery": [
-            'https://code.jquery.com/jquery-1.12.4.min',
-            'jquery-1.12.4.min'
-        ],
-        "analytics": [
-            'https://www.google-analytics.com/analytics',
-            'analytics'
-        ],
-        "quant": [
-            (document.location.protocol == 'https:' ? 'https://secure' : 'http://edge') + '.quantserve.com/quant',
-            'quant'
-        ]
-    },
-    shim: {
-        "analytics": {
-            exports: "__ga__"
-        }
-    }
-});
+// Optionally import libraries directly if they support ESM:
+// import "https://code.jquery.com/jquery-1.12.4.min.js"; // if jQuery has been adapted for ESM
 
-requirejs(['scale.fix', 'tracker'], function() {
-    'use strict';
-});
+// Import your application modules relative to this file's location.
+// Ensure that these modules use export/import as needed.
+import "./scale.fix.js";
+
+// Any additional initialization code can go here.
