@@ -1,7 +1,7 @@
 title: "Rants &amp; Raves"
 description: "Systems engineer with running and triathlon aspirations"
 
-url: "http://beol.github.io"
+url: "https://beol.github.io"
 repository: "beol/beol.github.io"
 
 google_analytics: UA-8853012-4
@@ -10,6 +10,15 @@ gravatar: 6f883e6660c16d8c1b51277eb4f602f1
 
 theme: jekyll-theme-minimal
 plugins:
-    - jekyll-sitemap
+  - jekyll-sitemap
 
-exclude: [".rvmrc", "README.md", "Gemfile", "Gemfile.lock", "build.js", "vendor", "script"]
+exclude:
+  [
+    ".rvmrc",
+    "README.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "build.js",
+    "vendor",
+    "script",
+  ]
