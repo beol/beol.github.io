@@ -1,14 +1,43 @@
-# README
+# beol.github.io
 
-Personal blog of [Leo Laksmana](https://beol.github.io) powered by [Jekyll](https://jekyll.com/) and hosted in [Github Pages](https://pages.github.com/).
+Professional portfolio of [Leo Laksmana](https://beol.github.io) — Senior Director of Engineering, Engineering Transformation Leader, and AI Practitioner.
+
+Built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
+
+## Stack
+
+- **Jekyll** 4.0 with custom SCSS (no off-the-shelf theme layout)
+- **Ruby** 4.0
+- **Plugins:** jekyll-sitemap
+- **Font:** Inter via system stack
+
+## Development
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Site runs at `http://localhost:4000`.
+
+## Deployment
+
+Pushes to `main` trigger the GitHub Actions deploy workflow (`.github/workflows/deploy.yml`), which builds the site and publishes it to GitHub Pages via the official `actions/deploy-pages` action.
+
+Requires **Settings → Pages → Source** set to **GitHub Actions** in the repository.
+
+## Content
+
+| File/Directory | Purpose |
+|---|---|
+| `index.md` | Home page (hero, timeline) |
+| `_data/pillars.yml` | Technical pillars section |
+| `_data/transformations.yml` | Case studies section |
+| `_layouts/home.html` | Home page layout |
+| `assets/css/style.scss` | All styles |
+| `assets/images/avatar.jpg` | Profile photo |
+| `_includes/header.html` | Sidebar (nav, social links, copyright) |
 
 ## Copyright & License
 
-Copyright (C) 2015 - Released under the MIT License.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copyright (C) 2025 Leo Laksmana. Released under the MIT License.
