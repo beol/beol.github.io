@@ -1,8 +1,8 @@
 - title: "The 14-Day Delivery Transformation"
-  context: "Led the evolution of Visa's consumer product delivery from monthly cycles plagued by manual QA to a reliable, bi-weekly cadence."
+  context: "Transformed Visa's consumer product delivery from monthly cycles plagued by manual QA to a reliable, bi-weekly cadence."
   details:
     - "Eliminated bureaucratic gates and matured immature delivery processes across multiple product teams."
-    - "Introduaed BDD/TDD automated testing to reduce critical-defect escapes."
+    - "Introduced BDD/TDD automated testing to reduce critical-defect escapes."
     - "Reduced median lead time to change from 2 months to a 14-day target."
 
 - title: "AI-Augmented Engineering Evolution"
