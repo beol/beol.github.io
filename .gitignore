@@ -2,6 +2,7 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+.jekyll-cache/
 
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
