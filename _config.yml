@@ -1,12 +1,11 @@
-title: "Rants &amp; Raves"
-description: "Systems engineer with running and triathlon aspirations"
+title: "Leo Laksmana"
+description: "Senior Director of Engineering · Engineering Transformation Leader · AI Practitioner"
 
 url: "https://beol.github.io"
 repository: "beol/beol.github.io"
 
-google_analytics: UA-8853012-4
-quantcast: p-2hmv506hLezgG
 gravatar: 6f883e6660c16d8c1b51277eb4f602f1
+linkedin: llaksmana
 
 theme: jekyll-theme-minimal
 plugins:

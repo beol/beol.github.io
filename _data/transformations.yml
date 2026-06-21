@@ -1,0 +1,18 @@
+- title: "The 14-Day Delivery Transformation"
+  context: "Led the evolution of Visa's consumer product delivery from monthly cycles plagued by manual QA to a reliable, bi-weekly cadence."
+  details:
+    - "Eliminated bureaucratic gates and matured immature delivery processes across multiple product teams."
+    - "Introduaed BDD/TDD automated testing to reduce critical-defect escapes."
+    - "Reduced median lead time to change from 2 months to a 14-day target."
+
+- title: "AI-Augmented Engineering Evolution"
+  context: "Currently designing and deploying agentic AI into the CI/CD pipeline to accelerate developer resolution and security remediation."
+  details:
+    - "Developing an AI agent for auto-remediation of SonarQube and Sonatype security scan findings."
+    - "Building a build-failure feedback agent to provide precise root-cause analysis and recommended fixes."
+
+- title: "Scaling High-Growth Product Organizations"
+  context: "Grew the Visa Installments engineering team from 10 to 30 FTEs while maintaining high velocity during market expansion."
+  details:
+    - "Restructured team composition to reduce contractor dependency and increase internal capability."
+    - "Partnered with product leadership to support strategic issuer onboarding and merchant integrations globally."

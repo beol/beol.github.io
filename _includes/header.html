@@ -1,5 +1,5 @@
 <header class="sidebar">
-  <img alt="avatar" src="https://www.gravatar.com/avatar/{{ site.gravatar }}">
+  <img alt="avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}">
   <h1>{{ site.title }}</h1>
 
   <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -14,6 +14,14 @@
       </a>
     </li>
     <li>
+      <a href="https://linkedin.com/in/{{ site.linkedin }}">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </li>
+    <li>
       <a href="{{ site.github.owner_url }}">
         <span class="fa-stack fa-lg">
           <i class="fas fa-circle fa-stack-2x"></i>
@@ -22,4 +30,8 @@
       </a>
     </li>
   </ul>
+
+  <div class="sidebar-footer">
+    <p>&#169; Copyright 2025 Leo Laksmana.<br>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+  </div>
 </header>
