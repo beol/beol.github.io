@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '~> 3.4'
+ruby '~> 4.0'
 
-gem 'github-pages', groups: :jekyll_plugins
-gem 'html-proofer'
-gem "nokogiri", "~> 1.18.4 "
-gem "kramdown", ">= 2.3.1"
-gem 'json', "~> 2.10.2"
+gem "jekyll", "~> 4.0.0"
+gem "jekyll-theme-minimal"
+gem "jekyll-sitemap"
+gem "webrick"
+gem "logger"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
